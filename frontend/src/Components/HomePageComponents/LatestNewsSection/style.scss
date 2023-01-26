@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.latestNewsSection {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .latestNewsMain {
+        width: 60%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        p {
+            color: gray;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            font-size: 35px;
+            display: flex;
+            gap: 10px;
+
+            h2 {
+                border-bottom: 2px solid blue;
+                padding-bottom: 7px;
+            }
+        }
+
+        .latestItem {
+            width: 100%;
+            height: 45vh;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            #latestcard{
+                width: 350px;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                img{
+                    width: 100%;
+                    height: 220px;
+                }
+                #byadmincmnt{
+                    display: flex;
+                    gap: 20px;
+                    #byadmin{
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                #latesth2{
+                    font-weight: 100;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                #latesth2:hover{
+                    color: blue;
+                }
+                #latestP{
+                    font-size: 16px;
+                    font-weight: 100;
+                }
+                button{
+                        height: 30px;
+                    border: none;
+                    background-color: white;
+                    cursor: pointer;
+                }
+                button:hover{
+                    color: blue;
+                }
+            }
+        }
+    }
+}

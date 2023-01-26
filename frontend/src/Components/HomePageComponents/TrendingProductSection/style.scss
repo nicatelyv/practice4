@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.trendingSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .trendingMain{
+        width: 60%;
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p{
+            color: gray;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            font-size: 35px;
+            display: flex;
+            gap: 10px;
+            h2{
+                border-bottom: 2px solid blue;
+                padding-bottom: 7px;
+            }
+        }
+        button{
+            width: 200px;
+            height: 35px;
+            border-radius: 10px;
+            border: none;
+            background-color: goldenrod;
+            cursor: pointer;
+            color: white;
+        }
+        .cards{
+            width: auto;
+            min-height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-right: 50px;
+            .card{
+                width: 250px;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                overflow: hidden;
+                gap: 5px;
+                border: none;
+                img{
+                    width: auto;
+                    height: 250px;
+                }
+                .trendName{
+                    font-size: 25px;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .cardPrice{
+                    font-size: 20px;
+                    color: gray;
+                    font-weight: 600;
+                }
+                button{
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: goldenrod;
+                    cursor: pointer;
+                    color: white;
+                }
+                #deletebtn{
+                    width: 80px;
+                    height: 25px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: gray;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
